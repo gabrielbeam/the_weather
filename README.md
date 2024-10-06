@@ -1,16 +1,40 @@
 # the_weather
 
-A new Flutter project.
+## Contents
 
-## Getting Started
+1. [Setting Up](#setting-up-flutter)
+2. [Debugging](#debugging)
+3. [Contributing](#contributing)
 
-This project is a starting point for a Flutter application.
+Before running the app, please follow the steps to verify your environment
 
-A few resources to get you started if this is your first Flutter project:
+## Setting Up Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Follow the instructions in official docs to install necessary tools for your preferred IDE
+https://docs.flutter.dev/get-started/install
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Environment variables
+
+To run the app or test locally, we need to configure the list of environment variables.
+You can try to copy the `.env-test` file to `.env` if it has not yet been done:
+
+```
+> cp .env-test .env
+```
+Update the api-key accordingly.
+
+### Run the app
+
+To run the app
+
+```
+> flutter clean (Do this when you think your pub packages are mess)
+> flutter pub cache clean (Do this when you think your pub packages are mess)
+> flutter pub get
+Running "flutter pub get" in escooter-mini-app...
+> dart run build_runner build --delete-conflicting-outputs
+> # Run the simulator or connect a physical device before you run the app
+> flutter run --flavor local [for android]
+> flutter run [for ios]
+ or run with vscode (cmd + shift + P) -> Run flutter
+```
