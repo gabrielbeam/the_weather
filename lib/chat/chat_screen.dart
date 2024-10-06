@@ -94,7 +94,7 @@ class _ChatScreen extends ConsumerState<ChatScreen> {
     }).toList();
 
     final request = ChatCompleteText(
-        model: ChatModelFromValue(model: 'gpt-3.5-turbo'), messages: messagesHistory, maxToken: 200);
+        model: ChatModelFromValue(model: 'chatgpt-4o-latest'), messages: messagesHistory, maxToken: 200);
     await _openAI.onChatCompletion(request: request).then((response) {
       for (var message in response!.choices) {
         if (message.message != null) {
@@ -102,9 +102,7 @@ class _ChatScreen extends ConsumerState<ChatScreen> {
         }
       }
     }).catchError((error) {
-      setState(() {
-        _sendMessageFromAI('Sorry, something went wrong. Error: $error');
-      });
+      _sendMessageFromAI('Sorry, something went wrong. Error: $error');
     }).whenComplete(() {
       setState(() {
         _typingUsers.remove(ai);

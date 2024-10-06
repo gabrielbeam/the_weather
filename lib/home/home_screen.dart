@@ -61,7 +61,7 @@ class _HomeScreen extends ConsumerState<HomeScreen> {
         Padding(
           padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
           child: SizedBox(
-            height: 205,
+            height: null,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,7 +77,7 @@ class _HomeScreen extends ConsumerState<HomeScreen> {
         Padding(
           padding: EdgeInsets.fromLTRB(8.0, 10.0, 8.0, 4.0),
           child: Container(
-              height: 200,
+              height: 250,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: getCropsInformation(),
@@ -86,7 +86,7 @@ class _HomeScreen extends ConsumerState<HomeScreen> {
         Padding(
           padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
           child: SizedBox(
-            height: 360,
+            height: null,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,7 +119,7 @@ class _HomeScreen extends ConsumerState<HomeScreen> {
         Padding(
           padding: EdgeInsets.fromLTRB(12.0, 10.0, 12.0, 4.0),
           child: SizedBox(
-            height: 850,
+            height: null,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,

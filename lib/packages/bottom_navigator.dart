@@ -77,7 +77,7 @@ class _BottomNavigatorState extends ConsumerState<BottomNavigator> {
     final currentRoute = NavigatorHelper.getCurrentRoute();
     final currentBottomNavigatorItem =
         _getCurrentBottomNavigatorItem(currentRoute);
-    const double navigatorBottomGap = 28;
+    const double navigatorBottomGap = 5;
     const double navigatorHorizontalGap = 10;
 
     return Container(
