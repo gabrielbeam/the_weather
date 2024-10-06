@@ -3,8 +3,7 @@
 ## Contents
 
 1. [Setting Up](#setting-up-flutter)
-2. [Debugging](#debugging)
-3. [Contributing](#contributing)
+2. [Run The App](#run-the-app)
 
 Before running the app, please follow the steps to verify your environment
 
