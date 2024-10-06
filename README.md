@@ -1,7 +1,7 @@
 # the_weather
 
 
-## Android APK download link
+## Android APK download link (Install only on Android phone)
 
 https://drive.google.com/drive/u/1/folders/1qJqbQPhbFLMwHo4HitPlXVVNq-IfHWQd
 
